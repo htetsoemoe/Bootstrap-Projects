@@ -36,6 +36,31 @@ $spacers: (
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+// create background image on home section
+#home {
+    position: relative;
+}
+
+#home::before {
+    content: url(../img/leaf-branch-2.png);
+    opacity: 0.2;
+    position: absolute;
+    transform: translateX(-50px) translateY(-100px) rotate(90deg);
+    z-index: -1;
+}
+
+#home::after {
+    content: url(../img/leaf-branch-4.png);
+    opacity: 0.2;
+    position: absolute;
+    transform: translateX(106px) translateY(100px) rotate(339deg);
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+// end of create background image on home section
+
 body {
     height: 3000px;
 }
