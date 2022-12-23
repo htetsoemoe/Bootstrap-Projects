@@ -12637,4 +12637,25 @@ nav {
   transform: translateY(-60px);
 }
 
+.newsletter {
+  border-radius: 2rem;
+  background-color: rgb(36, 25, 21);
+  position: relative;
+}
+
+.newsletter .leaf {
+  width: 40px;
+  position: absolute;
+  z-index: 1;
+  transform: rotate(45deg);
+  right: 60px;
+  bottom: -45px;
+}
+
+@media (max-width: 767.98px) {
+  .newsletter {
+    border-radius: 0;
+  }
+}
+
 /*# sourceMappingURL=app.css.map */
