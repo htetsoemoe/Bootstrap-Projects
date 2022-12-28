@@ -13,7 +13,8 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3"
+            id="navbar">
         <div class="container">
             <a href="index.html" class="navbar-brand">Programming Bootcamp</a>
 
@@ -48,7 +49,11 @@
                         We focus on teaching our students the fundamentals of the latest
                         and greatest technologies to prepare them for their first developer role.
                     </p>
-                    <button class="btn btn-primary">Start The Enrollment</button>
+                    <button class="btn btn-primary btn-lg"
+                            data-bs-toggle="modal"
+                            data-bs-target="#enroll">
+                        Start The Enrollment
+                    </button>
                 </div>
                 <img src="./img/showcase.svg" alt="photo" class="img-fluid w-50 d-none d-sm-block pb-lg-5">
             </div>
@@ -408,16 +413,16 @@
                     <h2 class="text-center mb-4">Contact Info</h2>
                     <ul class="list-group list-group-flush lead">
                         <li class="list-group-item">
-                            <span class="fw-bold">Main Location : </span> No.77, 26th * 66th street, Mandalay, Myanmar.
+                            <span class="fw-bold">Address : </span> Room No.77, Sedona Hotel, 26th & 66th street, Mandalay, Myanmar.
                         </li>
                         <li class="list-group-item">
-                            <span class="fw-bold">Enrollment Phone : </span> +95 9 94212060
+                            <span class="fw-bold">Phone : </span> +95 9 94212060
                         </li>
                         <li class="list-group-item">
-                            <span class="fw-bold">Enrollment Email : </span> admin@codeninja.com
+                            <span class="fw-bold">Email : </span> admin@codeninja.com
                         </li>
                         <li class="list-group-item">
-                            <span class="fw-bold">Our Website : </span> https://www.codeninja.com
+                            <span class="fw-bold">Website : </span> https://www.codeninja.com
                         </li>
                     </ul>
                 </div>
@@ -437,11 +442,52 @@
         <div class="container">
             <p class="lead">Copyright &copy; 2023 Programming Bootcamp</p>
             
-            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+            <a href="#navbar" class="position-absolute bottom-0 end-0 p-5">
                 <i class="bi bi-arrow-up-circle h1"></i>
             </a>
         </div>
     </footer>
+
+        <!-- Modal -->
+        <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="enrollLabel">Enrollment</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="lead">Fill out this form and we will get back to you.</p>
+                        <form>
+                            <div class="mb-3">
+                                <label for="first-name" class="col-form-label">
+                                    First Name:
+                                </label>
+                                <input type="text" class="form-control" id="first-name" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="last-name" class="col-form-label">Last Name:</label>
+                                <input type="text" class="form-control" id="last-name" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="col-form-label">Email:</label>
+                                <input type="email" class="form-control" id="email" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="col-form-label">Phone:</label>
+                                <input type="tel" class="form-control" id="phone" />
+                            </div>
+                        </form> 
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
    
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
