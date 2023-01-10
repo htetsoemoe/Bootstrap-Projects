@@ -11,7 +11,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
+    <nav class="navbar navbar-expand-lg bg-transparent "  id="navbar">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="img/logo.png" class="navbar-brand-logo" alt="">
@@ -36,6 +36,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#recently">Recently</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
 
@@ -233,7 +236,71 @@
                 </div>
             </div>
         </section>
+
+        <section id="contact" class="py-7">
+            <div class="container">
+                <div class="row px-5 g-4">
+                    <div class="col-xl-4 col-md-6 mb-4">
+                        <div class="d-flex ">
+                            <img src="./img/logo.png" class="navbar-brand-logo btn-icon px-2" alt="">
+                            <h3>Sushi</h3>
+                        </div>
+                        <p>Food for the body is not enough, There must be food for the soul.</p>
+                        <div class="contact-leaf-container">
+                            <img src="img/spinach-leaf.png" alt="photo" class="content-leaf">
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-md-6 mb-4">
+                        <h3>Main Menu</h3>
+                        <a href="#" class="d-block contact-link">About</a>
+                        <a href="#" class="d-block contact-link">Menus</a>
+                        <a href="#" class="d-block contact-link">Offer</a>
+                        <a href="#" class="d-block contact-link">Events</a>
+                    </div>
+
+                    <div class="col-xl-2 col-md-6 mb-4">
+                        <h3>Information</h3>
+                        <a href="#" class="d-block contact-link">Contact</a>
+                        <a href="#" class="d-block contact-link">Order & Returns</a>
+                        <a href="#" class="d-block contact-link">Videos</a>
+                        <a href="#" class="d-block contact-link">Reservation</a>
+                    </div>
+
+                    <div class="col-xl-2 col-md-6 mb-4">
+                        <h3>Address</h3>
+                        <p>
+                            No.72, 57A street, between 107 and 108 street, Mandalay, Myanmar.
+                        </p>
+                    </div>
+
+                    <div class="col-xl-2 col-md-6 mb-4">
+                        <h3>Social Media</h3>
+                        <i class="ri-facebook-box-fill btn"></i>
+                        <i class="ri-instagram-fill btn"></i>
+                        <i class="ri-twitter-fill btn"></i>
+                        <div class="social">
+                            <img src="./img/spring-onion.png" alt="photo" class="social-leaf">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="p-5 text-center position-relative">
+            <div class="container">
+                <!-- span#id using current year generated with JavaScript file (./assets/app.js) -->
+                <p class="lead">Copyright &copy; <span id="year"></span> &nbsp; &nbsp; Sushi House</p>
+        
+                <a href="#navbar" class="position-absolute bottom-0 end-0 p-5 position-fixed">
+                    <i class="ri-arrow-up-circle-fill h1"></i>
+                </a>
+            </div>
+        </footer>
     </main>
+
+ 
 
     <!--=============== MAIN JS ===============-->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

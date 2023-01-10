@@ -132,3 +132,31 @@ nav {
         border-radius: 0;
     }
 }
+
+// Styles for a on contact section
+.contact-link {
+    text-decoration: none;
+}
+
+.contact-leaf-container {
+    position: relative;
+}
+
+.content-leaf {
+    width: 30px;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 200px;
+}
+
+.social {
+    position: relative;
+}
+
+.social-leaf {
+    width: 25px;
+    position: absolute;
+    transform: rotate(315deg);
+    left: 100px;
+}
+
